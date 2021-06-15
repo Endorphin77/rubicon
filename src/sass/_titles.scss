@@ -1,0 +1,19 @@
+.title {
+    border-left: 3px solid $main-color;
+    padding: 0 10px 0 10px;
+    color: $title-color;
+    font-weight: 400;
+    &_xl {
+        font-size: 30px;
+        line-height: 1.1em;
+    }
+    &_l {
+        font-size: 27px;
+        line-height: 1.1em;
+        font-weight: 400;
+    } 
+    &_m {
+        font-size: 21px;
+        line-height: 1.1em;
+    }
+}

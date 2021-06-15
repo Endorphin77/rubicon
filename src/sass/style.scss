@@ -1,0 +1,46 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+::-moz-selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::-webkit-selection {
+    color: #fff;
+    background-color: $main-color;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+body,html {
+    height:100%;
+  }
+
+@import 'titles';
+@import 'hamburger.scss';
+@import 'tell.scss';
+@import 'header.scss';
+@import 'preview';
+@import 'corusel.scss';
+@import 'promo.scss';
+@import 'main-btn.scss';
+@import 'mobile-menu';
+@import 'search';
+@import 'footer.scss';
+@import 'media.scss';
+
+
+
+
+
+
+
+
+
+
+

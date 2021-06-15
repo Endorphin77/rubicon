@@ -1,0 +1,40 @@
+.main-btn {
+    width: 90%;
+    margin: 0 auto;
+    height: 65px;
+    background-color: $main-color;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s all;
+    &:hover {
+        background-color: #fff;
+        border: 3px solid $main-color;
+    }
+    & a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        padding-left: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        & span {
+            font-weight: 900;
+            font-size: 30px;
+        }
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &_docks {
+        width: 100%;
+    }
+    &_devices {
+        a {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
