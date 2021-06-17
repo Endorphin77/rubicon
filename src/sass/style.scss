@@ -1,15 +1,15 @@
 @import 'colors.scss';
 @import 'fonts.scss';
 ::-moz-selection{
-    color: #fff;
+    color: #000;
     background-color: $main-color;
 }
 ::selection{
-    color: #fff;
+    color: #000;
     background-color: $main-color;
 }
 ::-webkit-selection {
-    color: #fff;
+    color: #000;
     background-color: $main-color;
 }
 
@@ -20,6 +20,10 @@ html {
 body,html {
     height:100%;
   }
+
+.back-container {
+    background-color: rgb(7, 7, 7);
+}
 
 @import 'titles';
 @import 'hamburger.scss';

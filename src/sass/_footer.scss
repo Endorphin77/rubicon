@@ -1,14 +1,16 @@
 .footer {
     width: 100%;
-    background-color: #dddddd;
+    background-color: #202020;
     color: #707070;
-    margin-top: 30px;
     font-size: 15px;
     padding: 0;
+    z-index: 18;
+    position: relative;
     & a {
         color: #707070;
         text-decoration: none;
         transition: 0.5s all;
+        z-index: 18;
         &:hover {
             color: $main-color;
         }   
