@@ -155,7 +155,16 @@
                             height: 100px;
                             right: 7px;
                             top: 7px;
-                            background: url(../img/red-png-transparent-image.png) 100% 100% no-repeat;
+                            background: url(../img/red-png-transparent-image2.png) 100% 100% no-repeat;
+                            background-size: cover;
+                        }
+                        &-hot {
+                            position: absolute;
+                            width: 80px;
+                            height: 80px;
+                            left: 30px;
+                            top: 4px;
+                            background: url(../img/hot.png) 100% 100% no-repeat;
                             background-size: cover;
                         }
                         &-title {
