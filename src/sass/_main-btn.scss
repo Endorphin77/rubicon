@@ -1,14 +1,13 @@
 .main-btn {
-    width: 90%;
-    margin: 0 auto;
-    height: 65px;
-    background-color: $main-color;
-    border-radius: 5px;
+    width: 60%;
+    height: 50px;
+    background-color: rgb(77, 77, 77);
     position: relative;
     transition: 0.3s all;
+    opacity: 0.8;
     &:hover {
-        background-color: #fff;
-        border: 3px solid $main-color;
+        background-color: $main-color;
+        opacity: 1;
     }
     & a {
         display: flex;
@@ -25,16 +24,12 @@
             font-size: 30px;
         }
         &:hover {
-            color: $main-color;
+            color: #000;
         }
     }
-    &_docks {
-        width: 100%;
+    &_corusel {
+        margin-top: 5px;
+        padding-bottom: 5px;
     }
-    &_devices {
-        a {
-            justify-content: center;
-            padding: 0;
-        }
-    }
+    
 }
