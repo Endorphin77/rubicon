@@ -1,6 +1,12 @@
 
 @media (max-width: 1400px) {
-   
+    .main-btn_corusel {
+        width: auto;
+        a {
+            justify-content: center;
+            padding: 0;
+        }
+    }   
 }
 
 @media (max-width: 1200px) {
@@ -24,6 +30,15 @@
             }
         }
     }
+    .corusel__product-title {
+        min-height: 46px;
+    }
+    .corusel__product-desc {
+        min-height: 76px!important;
+    }
+    .corusel__product-price_new {
+        font-size: 21px!important;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -39,6 +54,9 @@
         a {
             font-size:45px;
         }
+    }
+    .corusel__product-price_new {
+        font-size: 23px!important;
     }
 }
 
@@ -102,11 +120,6 @@
         }
     }
     
-    .footer__boxes-logo {
-        img {
-            width: 200px;
-        }
-    }
     .preview__overlay {
         h1 {
             font-size: 45px!important;
@@ -158,6 +171,15 @@
     }
     .corusel__title-text {
         font-size: 45px;
+    }
+    .corusel__product-title {
+        min-height: 23px;
+    }
+    .corusel__product-desc {
+        min-height: none!important;
+    }
+    .corusel__product-price_new {
+        font-size: 23px!important;
     }
 }
 
@@ -269,8 +291,44 @@
     }
    
 }
-@media (max-width: 425px) {
-    
+
+@media (max-width: 450px) {
+    .corusel__title-text {
+        width: 100%;
+        font-size: 30px;
+    }
+    .preview {
+        min-width: 100%;
+        height: 100vh!important;
+        overflow:hidden;
+        &__video {
+            max-width: 100vw;
+            height: 100vh!important;
+        }
+    }    
+}
+
+@media (max-width: 388px) {
+    .corusel__product-title {
+        min-height: 46px;
+    }
+    .corusel__product-price_old {
+        font-size: 18px!important;
+    }
+    .corusel__product-price_new {
+        font-size: 18px!important;
+    }
+}
+@media (max-width: 343px) {
+    .corusel__product-title {
+        min-height: 46px;
+    }
+    .corusel__product-price_old {
+        font-size: 15px!important;
+    }
+    .corusel__product-price_new {
+        font-size: 15px!important;
+    }
 }
 
 @media (max-width: 375px) {

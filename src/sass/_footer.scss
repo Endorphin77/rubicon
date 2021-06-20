@@ -35,9 +35,10 @@
         &-logo {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             & img {
-                width: 230px;
+                width: 80px;
+                margin: 0 auto;
             }
         }
     }
@@ -50,7 +51,7 @@
     }
     &__mobile-logo {
         display: none;
-        width: 250px;
+        width: 100px;
         margin: 0 auto;
         padding-top: 30px;
     }

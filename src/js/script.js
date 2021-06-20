@@ -72,7 +72,7 @@ function toggleMobileMenu(item) {
 };
 
 toggleMobileMenu('.hamburger');
-toggleMobileMenu('.mobile-menu__close-box');
+toggleMobileMenu('.mobile-menu_a');
 
 function toggleMobileMenuContent(item) {
   $(item).each(function(i) {
