@@ -31,5 +31,17 @@
         margin-top: 5px;
         padding-bottom: 5px;
     }
+    &_courses {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 200px;
+        height: 60px;
+        padding: 0;
+        a {
+            padding: 0;
+            justify-content: center;
+        }
+    }
     
 }
