@@ -1,0 +1,288 @@
+.corusel {
+    &_main {
+        transition: 0.5s all;
+        margin-top: 135px;
+        width: 100%;
+        .corusel__wrapper_main {
+            position: relative;
+            margin: 0 auto;
+            transition: 0.5s all;
+            & a {
+                width: 100%;
+                z-index: 10;
+            }
+            img {
+                max-height: 350px;
+                width: 100%;
+            }
+            &:hover {
+                .slick-prev, .slick-next {
+                    opacity: 0.5;
+                    transition: 0.5s all;
+                }
+            } 
+        }
+        .slick-prev, .slick-next {
+            transition: 0.5s all;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            opacity: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 11;
+            width: 50px;
+            height: 120px;
+            & img {
+                width: 27px;
+                height: 45px;
+            }
+            &:hover {
+                opacity: 0.8!important;
+            }
+        }
+        .slick-next {
+            left: auto;
+            right: 12px;
+            
+        }
+        
+        .slick-slide {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .slick-dots {
+            list-style-type: none;
+            display: flex;
+            width: 70px;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 0;
+            button {
+                background-color:#fff;
+                border: 2px gray solid;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                font-size: 0;
+            }
+        }
+        .slick-active {
+            button {
+                
+                border: 2px $main-color solid;
+            }
+            
+        }
+        
+    }
+
+    &_best_tests {
+        transition: 0.5s all;
+        height: auto;
+        width: 100%;
+        padding-bottom: 60px;
+        position: relative;
+        z-index: 15;
+        &__back {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            top: -20%;
+            z-index: 10;
+            // background-color: rgba(0, 0, 0, 0.6);
+            &-img {
+               background: url(../img/fire.png) 100% 100% no-repeat;
+               background-size: contain;
+               background-position: -100px;
+               z-index: 16;
+            }
+        }
+        .corusel__title {
+            &-text {
+                margin-top: 30px;
+                color: #fff;
+            }
+        }
+        .corusel__wrapper-products {
+            border: 3px $main-color dotted;
+            padding: 0;
+            margin-top: 15px;
+            z-index: 16;
+            .corusel__wrapper-product {
+                position: relative;
+                margin: 0 auto;
+                transition: 0.5s all;
+                border-right: 3px $main-color dotted;
+                min-height: 600px;
+                .corusel__wrapper-row {
+                    padding: 15px;
+                    .corusel_products-link {
+                        display: block;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .corusel__product {
+                        &-img {
+                            overflow:hidden;
+                            position: relative;
+                            img {
+                                height: 400px;
+                                width: 100%;
+                                border: 1px #ddd solid;
+                                object-fit: cover;
+                                opacity: 0.8;
+                                transition: 0.5s all ease-out;
+                                
+                                &:hover {
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    -moz-transform: scale(1.1);
+                                    -o-transform: scale(1.1);
+                                }
+                            }
+                        }
+                        &-discount {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            right: 7px;
+                            top: 7px;
+                            background: url(../img/red-png-transparent-image2.png) 100% 100% no-repeat;
+                            background-size: cover;
+                        }
+                        &-hot {
+                            position: absolute;
+                            width: 80px;
+                            height: 80px;
+                            left: 30px;
+                            top: 4px;
+                            background: url(../img/hot.png) 100% 100% no-repeat;
+                            background-size: cover;
+                        }
+                        &-title {
+                            margin-top: 10px;
+                        }
+                        &-desc {
+                            color: #fff;
+                            text-align: justify;
+                            font-size: 15px;
+                            line-height: 1.25em;
+                            margin-top: 10px;
+                            min-height: 36px;
+                        }
+                        &-prices {
+                            display: flex;
+                        }
+                        &-price {
+                            color: #fff;
+                            text-align: justify;
+                            line-height: 1.25em;
+                            margin: 10px 5px 0px 5px;
+                            font-size: 23px;
+                            font-weight: 500;
+                            &_old {
+                                color: rgb(139, 139, 139);
+                                text-decoration: line-through;
+                                font-size: 19px;
+                                font-weight: 400;
+                            }
+                            &_new {
+                                color: rgb(230, 104, 0);
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+        .slick-prev, .slick-next {
+            transition: 0.5s all;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: $main-color;
+            position: absolute;
+            top: -42px;
+            right: 0;
+            z-index: 11;
+            width: 30px;
+            height: 30px;
+            color: #000;
+            & img {
+                width: 27px;
+                height: 45px;
+            }
+            &:hover {
+                opacity: 0.8!important;
+            }
+        }
+        .slick-prev {
+            left: auto;
+            right: 35px;
+            
+        }
+        
+        .slick-slide___ {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .slick-dots {
+            list-style-type: none;
+            display: flex;
+            width: 70px;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 0;
+            button {
+                background-color:#fff;
+                border: 2px gray solid;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                font-size: 0;
+            }
+        }
+        .slick-active {
+            button {
+                background-color: gray;
+            }
+            
+        }
+        
+    }
+    
+    &_best_discounts {
+        z-index: 10;
+        &__back {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            top: -20%;
+            z-index: 10;
+            justify-content: flex-end;
+            // background-color: rgba(0, 0, 0, 0.6);
+            &-img {
+               background: url(../img/discounts.png) 100% 100% no-repeat;
+               background-size: contain;
+               background-position: 100px;
+               z-index: 13;
+            }
+        }
+    }
+    
+    
+    
+}
+
+
+
