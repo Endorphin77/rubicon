@@ -75,6 +75,11 @@ body,html {
     background-color: rgb(7, 7, 7);
 }
 
+.anchor {
+    position: absolute;
+    top: -90px;
+}
+
 @import 'titles';
 @import 'hamburger.scss';
 @import 'tell.scss';
