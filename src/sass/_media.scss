@@ -58,6 +58,16 @@
     .corusel__product-price_new {
         font-size: 23px!important;
     }
+    .courses__row {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .main-btn_courses {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -222,10 +232,16 @@
             width: 70%;
         }
     }
-}
-
-@media (max-width: 700px) {
-    
+    .courses__img {
+       height: 270px;
+       padding-bottom: 0;
+    }
+    .courses__text {
+        padding-top: 0;
+    }
+    .courses__desc {
+        min-width: 0;
+    }
 }
 
 @media (max-width: 592px) {
@@ -270,6 +286,12 @@
                 height: 0px;
             }
         }
+    }
+}
+
+@media (max-width: 491px) {
+    .courses__prices {
+        flex-wrap: wrap;
     }
 }
 
