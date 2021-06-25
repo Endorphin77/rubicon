@@ -43,5 +43,12 @@
             justify-content: center;
         }
     }
-    
+    &_events {
+        width: 300px;
+        margin-top: 10px;
+        a {
+            padding: 0;
+            justify-content: center;
+        }
+    }
 }

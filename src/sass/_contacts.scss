@@ -1,0 +1,34 @@
+.contacts {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: rgb(17, 17, 17);
+    hr {
+        background-color: $main-color;
+    }
+    &__item-container {
+        margin-top: 30px;
+    }
+    &__item-row {
+        height: auto;
+        border: 3px dotted $main-color;
+        display: flex;
+        position: relative;
+        &:not(:nth-child(1)) {
+            margin-top: 25px;
+        }
+    }
+    &__img {
+        height: 100%;
+        padding: 10px;
+        width: 360px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 340px;
+            width: 340px;
+            object-fit: contain;
+        }
+    }
+}
