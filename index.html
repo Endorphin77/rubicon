@@ -6,12 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary Meta Tags -->
+    <title>Rubicon Academy</title>
+    <meta name="title" content="Rubicon Academy">
+    <meta name="description" content="Академия роботостроения и программирования для детей от 7 до 18 лет.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Rubicon Academy">
+    <meta property="og:description" content="Академия роботостроения и программирования для детей от 7 до 18 лет.">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Rubicon Academy">
+    <meta property="twitter:description" content="Академия роботостроения и программирования для детей от 7 до 18 лет.">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
     <title>Rubicon Academy</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons//favicon-16x16.png">
+    <link rel="manifest" href="icons//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -55,8 +93,8 @@
                     <nav class="header__nav col-md-5 header__nav_left">
                         <ul>
                             <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">Наши курсы</a></li>
-                            <li><a href="#desc">О нас</a></li>
+                            <li><a href="courses.html">Наши курсы</a></li>
+                            <li><a href="index.html#desc">О нас</a></li>
                         </ul>
                     </nav>
                     <div class="header__logo col-md-2">
@@ -65,7 +103,7 @@
                     <nav class="header__nav col-md-5">
                         <ul>
                             <li class="header__dropdown">
-                                <a href="#">Мероприятия</a>
+                                <a href="events.html">Мероприятия</a>
                                 <!-- <ul class="header__dropdown-content">
                                     <li><a class="" href="biosen.html">BIOSEN_C line</a></li>
                                     <li><a class="" href="#">Quo-Lab</a></li>
@@ -74,8 +112,14 @@
                                     <li><a class="" href="#">Lactate Scout 4</a></li>
                                 </ul> -->
                             </li>
-                            <li><a href="#">Преподаватели</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="teachers.html">Преподаватели</a></li>
+                            <li><a href="contacts.html">Контакты</a>
+                                <ul class="header__dropdown-content">
+                                    <li><a class="" href="contacts.html">Руководство</a></li>
+                                    <li><a class="" href="contacts.html#branches">Филиалы</a></li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                     </nav>
                 </div>
@@ -86,8 +130,8 @@
         <div class="mobile-menu__close-box"></div>
         <div class="mobile-menu__container">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Наши курсы</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="courses.html">Наши курсы</a></li>
                 <li><a href="index.html#desc" >О нас</a></li>
                 <!-- <li class="mobile-menu__dropdown">
                     <a href="#">Наши приборы</a>
@@ -100,9 +144,17 @@
                         <li><a class="" href="#">Lactate Scout 4</a></li>
                     </ul>
                 </li> -->
-                <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Роеподаватели</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
+                <li><a href="teachers.html">Роеподаватели</a></li>
+                <li class="mobile-menu__dropdown">
+                <a href="contacts.html">Контакты</a>
+                <div class="mobile-menu__plus"><span>+</span></div>
+                <ul class="mobile-menu__dropdown-content">
+                    <li><a class="" href="contacts.html">Руководство</a></li>
+                    <li><a class="" href="contacts.html#branches">Филиалы</a></li>
+                </ul>
+            </li>
+                
             </ul>
         </div>
     </div>
@@ -148,7 +200,7 @@
                     <div class="desc__row">
                         <div class="col-xl-6 desc__main">
                             <div class="desc__main-title">Кто Мы?</div>
-                            <div class="desc__main-text">Мы команда постоянно прогрессирующих и развивающихся профессиональных преподавателей, единомышленников, обажающих свое дело!</div>
+                            <div class="desc__main-text">Мы команда постоянно прогрессирующих и развивающихся профессиональных преподавателей, единомышленников, обожающих свое дело!</div>
                             <div class="desc__main-text">Мы - Rubicon Academy. Академия программирования и робототехники для детей дошкольного и школьного возраста.</div>
                         </div>
                         <div class="col-xl-6 desc__img">
@@ -229,6 +281,7 @@
                 </div>
             </div>
             <div class="container">
+                <div class="anchor" id="hots"></div>
                 <div class="row">
                     <div class="col-12">
                         <div class="corusel__title">
@@ -239,108 +292,115 @@
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/robot_12.jpg" alt="QuoLab">
+                                            <img src="img/lego_classic.jpg" alt="lego_classic">
                                         </div>
                                         <div class="corusel__product-discount"></div>
                                         <div class="corusel__product-hot"></div>
                                     </div>
                                     <div class="title title_m corusel__product-title">
-                                        Робототехника для детей 15+
+                                        LEGO Classic
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 15 лет и старше
+                                        Программа направлена на изменение в познавательных интересах и
+                                        профессиональных направлениях...
                                     </div>
                                     <div class="corusel__product-prices">
                                         <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
                                         <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#lego_classic">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/robot_6.jpg" alt="QuoLab">
+                                            <img src="img/lego_we_do.jpg" alt="lego_classic">
                                         </div>
                                         <div class="corusel__product-hot"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Робототехника для детей 6+
+                                        LEGO WeDo
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 6 лет и старше
-                                    </div>
-                                    <div class="corusel__product-prices">
-                                        <div class="corusel__product-price">13 890 руб./мес.</div>
-                                    </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
-                                </div>
-                            </div>
-                            <div class="corusel__wrapper-product col-md-4">
-                                <div class="corusel__wrapper-row">
-                                    <div class="">
-                                        <div class="corusel__product-img">
-                                            <img src="img/robot_15.jpg" alt="QuoLab">
-                                        </div>
-                                        <div class="corusel__product-discount"></div>
-                                        <div class="corusel__product-hot"></div>
-                                    </div>
-                                    
-                                    <div class="title title_m corusel__product-title">
-                                        Робототехника для детей 12+
-                                    </div>
-                                    <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 12 лет и старше
-                                    </div>
-                                    <div class="corusel__product-prices">
-                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
-                                        <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
-                                    </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
-                                </div>
-                            </div>
-                            <div class="corusel__wrapper-product col-md-4">
-                                <div class="corusel__wrapper-row">
-                                    <div class="">
-                                        <div class="corusel__product-img">
-                                            <img src="img/program_12.jpg" alt="QuoLab">
-                                        </div>
-                                        <div class="corusel__product-hot"></div>
-                                    </div>
-                                    
-                                    <div class="title title_m corusel__product-title">
-                                       Программирование на Phyton 12+
-                                    </div>
-                                    <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 12 лет и старше
+                                        Данный курс является вводным и направлен на первичное знакомство с Лего
+                                –конструированием...
                                     </div>
                                     <div class="corusel__product-prices">
                                         <div class="corusel__product-price">14 990 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#lego_we_do">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/program_12-2.jpg" alt="QuoLab">
+                                            <img src="img/arduino.jpg" alt="arduino.jpg">
                                         </div>
                                         <div class="corusel__product-hot"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Web-программирование для детей 12+
+                                        Ардуино
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по созданию сайтов для детей от 12 лет и старше
+                                        Arduino — это всемирно известная платформа, на которой удобно осваивать
+                                программирование...
                                     </div>
                                     <div class="corusel__product-prices">
-                                        <div class="corusel__product-price">13 990 руб./мес.</div>
+                                        <div class="corusel__product-price">15 990 руб./мес.</div> 
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#arduino">Подробнее</a> </div>
+                                </div>
+                            </div>
+                            <div class="corusel__wrapper-product col-md-4">
+                                <div class="corusel__wrapper-row">
+                                    <div class="">
+                                        <div class="corusel__product-img">
+                                            <img src="img/arduino_pro.jpg" alt="arduino_pro.jpg">
+                                        </div>
+                                        <div class="corusel__product-discount"></div>
+                                        <div class="corusel__product-hot"></div>
+                                    </div>
+                                    
+                                    <div class="title title_m corusel__product-title">
+                                        Ардуино продвинутый курс
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Arduino — это всемирно известная платформа, на которой удобно осваивать
+                                программирование...
+                                    </div>
+                                    <div class="corusel__product-prices">
+                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div>
+                                        <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
+                                    </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#arduino_pro">Подробнее</a> </div>
+                                </div>
+                            </div>
+                            <div class="corusel__wrapper-product col-md-4">
+                                <div class="corusel__wrapper-row">
+                                    <div class="">
+                                        <div class="corusel__product-img">
+                                            <img src="img/pyton.jpg" alt="pyton.jpg">
+                                        </div>
+                                        <div class="corusel__product-discount"></div>
+                                        <div class="corusel__product-hot"></div>
+                                    </div>
+                                    
+                                    <div class="title title_m corusel__product-title">
+                                        Phyton
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Изучая Python, ребёнок не только освоит один из самых популярных языков
+                                программирования...
+                                    </div>
+                                    <div class="corusel__product-prices">
+                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
+                                        <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
+                                    </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#phyton">Подробнее</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -356,6 +416,7 @@
                 </div>
             </div>
             <div class="container">
+                <div class="anchor" id="discounts"></div>
                 <div class="row">
                     <div class="col-12">
                         <div class="corusel__title">
@@ -366,111 +427,116 @@
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/robot_12.jpg" alt="QuoLab">
+                                            <img src="img/lego_classic.jpg" alt="lego_classic">
                                         </div>
                                         <div class="corusel__product-discount"></div>
                                         <div class="corusel__product-hot"></div>
                                     </div>
                                     <div class="title title_m corusel__product-title">
-                                        Робототехника для детей 15+
+                                        LEGO Classic
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 15 лет и старше
+                                        Программа направлена на изменение в познавательных интересах и
+                                        профессиональных направлениях...
                                     </div>
                                     <div class="corusel__product-prices">
                                         <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
                                         <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#lego_classic">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/program_c_15.jpg" alt="QuoLab">
+                                            <img src="img/mindstorme.jpg" alt="mindstorme.jpg">
                                         </div>
                                         <div class="corusel__product-discount"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Программирование на C++ 15+
+                                        LEGO Mindstorms 2 ур.
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс программированию на языке C++ для детей от 15 лет и старше
+                                        Для написания программ используется специальная программа EV3 Lab, позволяющая собирать...
                                     </div>
                                     <div class="corusel__product-prices">
-                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
-                                        <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
+                                        <div class="corusel__product-price corusel__product-price_old">16 990 руб.</div> 
+                                        <div class="corusel__product-price corusel__product-price_new">14 450 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#mindstorme_pro">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/robot_15.jpg" alt="QuoLab">
+                                            <img src="img/arduino_pro.jpg" alt="arduino_pro.jpg">
                                         </div>
                                         <div class="corusel__product-discount"></div>
                                         <div class="corusel__product-hot"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Робототехника для детей 12+
+                                        Ардуино продвинутый курс
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по строительству и программированию роботов из констркутора для детей от 12 лет и старше
+                                        Arduino — это всемирно известная платформа, на которой удобно осваивать
+                                программирование...
                                     </div>
                                     <div class="corusel__product-prices">
-                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
+                                        <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div>
                                         <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#arduino_pro">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/program_web_6.jpg" alt="QuoLab">
+                                            <img src="img/uniti.jpg" alt="uniti.jpg">
                                         </div>
                                         <div class="corusel__product-discount"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Web-программирование для детей 6+
+                                        Uniti
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по созданию сайтов для детей от 6 лет и старше
+                                        На практическом курсе по созданию 3D игр на Unity дети научатся программировать на языке
+                                        C#...
                                     </div>
                                     <div class="corusel__product-prices">
                                         <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
                                         <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#uniti">Подробнее</a> </div>
                                 </div>
                             </div>
                             <div class="corusel__wrapper-product col-md-4">
                                 <div class="corusel__wrapper-row">
                                     <div class="">
                                         <div class="corusel__product-img">
-                                            <img src="img/program_web_10.jpg" alt="QuoLab">
+                                            <img src="img/pyton.jpg" alt="pyton.jpg">
                                         </div>
                                         <div class="corusel__product-discount"></div>
+                                        <div class="corusel__product-hot"></div>
                                     </div>
                                     
                                     <div class="title title_m corusel__product-title">
-                                        Web-программирование для детей 10+
+                                        Phyton
                                     </div>
                                     <div class="corusel__product-desc">
-                                        Курс по созданию сайтов для детей от 10 лет и старше
+                                        Изучая Python, ребёнок не только освоит один из самых популярных языков
+                                программирования...
                                     </div>
                                     <div class="corusel__product-prices">
                                         <div class="corusel__product-price corusel__product-price_old">15 990 руб.</div> 
                                         <div class="corusel__product-price corusel__product-price_new">11 200 руб./мес.</div>
                                     </div>
-                                    <div class="main-btn main-btn_corusel"><a href="#">Записаться на курс</a> </div>
+                                    <div class="main-btn main-btn_corusel"><a href="courses.html#phyton">Подробнее</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -490,23 +556,22 @@
                             Быстрые ссылки
                         </div>
                         <div class="footer__boxes-links">
-                            <a class="" href="#">Главная</a>
-                            <a class="" href="#">Наши курсы</a>
-                            <a class="" href="#">Мероприятия</a>
-                            <a class="" href="#">Скидки</a>
-                            <a class="" href="#">Популярные курсы</a>
+                            <a class="" href="index.html">Главная</a>
+                            <a class="" href="courses.html">Наши курсы</a>
+                            <a class="" href="events.html">Мероприятия</a>
+                            <a class="" href="index.html#discounts">Скидки</a>
+                            <a class="" href="index.html#hots">Популярные курсы</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="title title_m">
-                            Служба поддержки
+                            Поддержка
                         </div>
                         <div class="footer__boxes-links">
-                            <a href="#">Карта сайта</a>
-                            <a href="#">Филиалы</a>
+                            <a href="contacts.html#branches">Филиалы</a>
                             <a href="#">Свяжитесь с нами</a>
-                            <a href="#">Преподаватели</a>
-                            <a href="#">Контакты</a>
+                            <a href="teachers.html">Преподаватели</a>
+                            <a href="contacts.html">Контакты</a>
                         </div>
                     </div>
                     <div class="col-md-3">

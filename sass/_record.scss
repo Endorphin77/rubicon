@@ -1,0 +1,122 @@
+.record {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 130;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    transition: 0.3s all;
+    overflow: hidden;
+    opacity: 0;
+    &__close-box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 129;
+    }
+    &_active {
+        top: 0;
+        overflow: auto;
+        opacity: 1;
+    }
+   
+    &__row {
+        width: 600px;
+        height: auto;
+        border: 3px solid $main-color;
+        background-color: rgb(29, 29, 29);
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 131;
+        p {
+            margin: 0;
+            padding-top: 5px;
+            color:rgb(189, 189, 189);
+        }
+    }
+    &__close {
+        color: $main-color;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:hover {
+            cursor: pointer;
+            color: #c76c0c;
+        }
+
+    }
+    &__title {
+        font-size: 31px;
+        color: $main-color;
+    }
+    & form {
+        width: 85%;
+        margin: 0 auto;
+        & input {
+            width: 85%;
+            margin: 0;
+            height: 35px;
+            padding-left: 15px;
+            background-color: rgb(29, 29, 29);
+            border: 2px solid #929292;
+            border-radius: 5px;
+            color:rgb(216, 216, 216);
+            outline: none;
+            margin-top: 10px;
+            transition: 0.5s all;
+            &:active {
+                border: 2px solid $main-color;
+                outline: none;
+            }
+            &:focus {
+                border: 2px solid $main-color;
+            }
+        }
+        & select {
+            width: 85%;
+            margin: 0;
+            height: 35px;
+            padding-left: 15px;
+            background-color: rgb(29, 29, 29);
+            border: 2px solid #929292;
+            border-radius: 5px;
+            color:rgb(216, 216, 216);
+            outline: none;
+            margin-top: 10px;
+            transition: 0.5s all;
+            &:active {
+                border: 2px solid $main-color;
+                outline: none;
+            }
+            &:focus {
+                border: 2px solid $main-color;
+            }
+        }
+        & button {
+            height: 35px;
+            margin: 0;
+            width: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
+            border: 2px solid $main-color;
+            background-color: rgb(29, 29, 29);
+            transition: 0.5s all;
+            color:$main-color;
+            &:hover {
+                border: 2px solid $main-color;
+                color: #000;
+                background-color: $main-color;
+            }
+        }
+    }
+}

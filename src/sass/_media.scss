@@ -69,6 +69,11 @@
         right: 0;
         margin-top: 5px;
     }
+    .contacts {
+        hr {
+            width: 90%;
+        }
+    }
 }
 
 @media (max-width: 990px) {
@@ -199,8 +204,15 @@
     .teachers__img {
         width: 100%;
     }
+    .contacts {
+        &__item-row {
+            flex-wrap: wrap;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
 }
-
 
 @media (max-width: 767px) {
     .footer {
@@ -210,6 +222,7 @@
         &__mobile-logo {
             display: block;
         }
+        
     }
     .preview__overlay {
         h1 {
@@ -317,7 +330,7 @@
         right: 5%;
     } 
     .tell {
-        right: 15%;
+        right: 20%;
     } 
     .desc__main {
         &-title {
@@ -343,7 +356,19 @@
             max-width: 100vw;
             height: 100vh!important;
         }
-    }    
+    }
+    .contacts {
+        &__img {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title_lx {
+            font-size: 40px;
+        }
+    }
 }
 
 @media (max-width: 388px) {
@@ -366,6 +391,9 @@
     }
     .corusel__product-price_new {
         font-size: 15px!important;
+    }
+    .events__title {
+        font-size: 23px;
     }
 }
 

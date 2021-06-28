@@ -1,0 +1,77 @@
+.events {
+    background-color: rgb(17, 17, 17);
+    &__title-main {
+        margin-top: 130px;
+    }
+    &__container {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    &__row {
+        height: auto;
+        border: 3px dotted $main-color;
+        display: flex;
+        position: relative;
+        padding: 15px;
+        &:not(:nth-child(1)) {
+            margin-top: 25px;
+        }
+    }
+    &__background {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: 9;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+    } 
+    &__text-box {
+        z-index: 10;
+        color: #fff;
+        font-size: 18px;
+    }
+    &__date {
+        margin-top: 3px;
+        font-size: 21px;
+    }
+    &__desc {
+        width: 70%;
+        margin-top: 10px;
+    }
+    &__address {
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            color: $main-color;
+            transition: 0.5s all;
+            &:hover {
+                color: #aa8f05;
+            }
+        }
+    } 
+    &__presenters {
+        a {
+            text-decoration: none;
+            color: $main-color;
+            transition: 0.5s all;
+            &:hover {
+                color: #aa8f05;
+            }
+            &:not(:nth-last-child(1)) {
+                &::after {
+                    content: '|';
+                    color: #fff;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }  
+}

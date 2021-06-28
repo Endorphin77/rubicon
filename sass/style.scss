@@ -75,6 +75,11 @@ body,html {
     background-color: rgb(7, 7, 7);
 }
 
+.anchor {
+    position: absolute;
+    top: -90px;
+}
+
 @import 'titles';
 @import 'hamburger.scss';
 @import 'tell.scss';
@@ -85,8 +90,12 @@ body,html {
 @import 'desc';
 @import 'main-btn.scss';
 @import 'mobile-menu';
-@import 'search';
+@import 'record';
 @import 'footer.scss';
+@import 'courses';
+@import 'teachers';
+@import 'events';
+@import 'contacts';
 @import 'media.scss';
 
 
