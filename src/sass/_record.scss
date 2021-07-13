@@ -119,4 +119,18 @@
             }
         }
     }
+    &__checkbox {
+        color:#fff;
+        width: 85%;
+        & input {
+            width: 30px!important;
+            height: 16px!important;
+        }
+        a {
+          color: $main-color;
+          &:hover {
+            color: $main-hover-color;
+          }  
+        }
+    }
 }
